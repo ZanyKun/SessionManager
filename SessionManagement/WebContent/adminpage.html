@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin Page</title>
+</head>
+<body>
+<h2>Welcome To The Admin Page</h2><br/> 
+		<h3>Enter Consumer Bill Details Below</h3>
+		<form action="./validate" method="post">
+			<label for="consumerNum">Consumer Number</label>
+			<input type="text" name="consumerNum" pattern="[1-9]{1}[0-9]{5}" title="Consumer must not begin with a 0"/><br/>
+			<label for="lastMonth">Last Month Meter Reading</label>
+			<input type="text" name="lastMonth" pattern="^(\d{1,3}(\,\d{3})*|(\d+))(\.\d{2})" title="Number cannot be negative, cannot have more than 2 digits after decimal"/><br/>
+			<label for="currentMonth">Current Month Meter Reading</label>
+			<input type="text" name="currentMonth" pattern="(\d{1,3}(\,\d{3})*|(\d+))(\.\d{2})" title="Number cannot be negative, cannot have more than 2 digits after decimal"/><br/>
+			<input type="submit" value="Calculate Bill"/>
+		</form>
+</body>
+</html>
