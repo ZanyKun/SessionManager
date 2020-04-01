@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="SessionManagement/src"/>
+	<classpathentry kind="src" path="resource"/>
+	<classpathentry kind="lib" path="tomcat-dbcp-9.0.33.jar"/>
+	<classpathentry kind="lib" path="ojdbc8-12.2.0.1.jar"/>
+	<classpathentry kind="lib" path="javax.servlet-api-4.0.1.jar"/>
+	<classpathentry kind="output" path="SessionManagement/build/classes"/>
+</classpath>
